@@ -1,0 +1,27 @@
+* {
+ list-style: none;
+}
+
+table {
+ width: 100%;
+ height: 500px;
+}
+
+table, td {
+ border: solid 1px blue;
+}
+
+.mc {
+ width: 60%;
+}
+
+.ls, 
+.rs {
+ width: 20%;
+}
+
+.mc,
+.ls,
+.rs {
+ padding: 5px;
+}
