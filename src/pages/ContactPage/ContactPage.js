@@ -1,10 +1,9 @@
 import React from 'react';
 import TableLayout from '../../components/TableLayout/TableLayout';
-import ContactForm from '../../components/ContactForm/ContactForm';
-
+import Form from '../../components/ContactForm/ContactForm';
 function ContactPage() {
  return (
-  <TableLayout Component={ContactForm}/>
+  <TableLayout Component={Form}/>
  )
 }
 

@@ -1,0 +1,72 @@
+.form {
+ width: 100%;
+ display: flex;
+ flex-direction: row-reverse;
+ background-color: blue;
+}
+
+.info,
+.msg {
+ width: 50%;
+ background-color: rgb(240, 232, 221);
+}
+
+.seperation {
+ background-color: blue;
+ width: 1px;
+ height: 250px;
+}
+
+.info {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-end;
+}
+
+.label, .button {
+ margin: 2%;
+ display: flex;
+ flex-direction: column;
+}
+
+.input, .button {
+ border: solid 1px rgb(91, 91, 182);
+ outline: none;
+ padding-left: 3%;
+ font-size: 12px;
+ font-family: arial;
+}
+
+.button {
+ background-color: rgb(213, 213, 235);
+ border: none;
+ text-align: center;
+ font-weight: 700;
+ width: 96%;
+ cursor: pointer;
+ margin-top: 5%;
+}
+
+.textarea {
+ min-height: 210px;
+ width: 100%;
+ margin-bottom: 1%;
+}
+
+.stamp {
+ background-color: blue;
+ width: 25px;
+ height: 25px;
+ margin: 5%;
+}
+
+.inputs {
+ width: 100%;
+ background-color: rgb(240, 232, 221);
+}
+
+.contact-title {
+ padding: 4%;
+ text-align: center;
+}

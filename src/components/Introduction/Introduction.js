@@ -42,7 +42,7 @@ function Introduction() {
     I thrive on building applications that are both <span className="spacing">functional</span> and <span className="bold spacing">beautiful</span>. 
    </div>
    <div>
-    <span className="underline">Take a look →</span>
+    <span className="spacing">Take a look →</span>
    </div>
   </div>
  )

@@ -25,12 +25,12 @@ function LeftSidebar() {
       </li>
       <li>
         <Link to="/contact" alt="contact page">
-          <p className="link">contact me</p>
+          <p className="link">contact</p>
         </Link>
       </li>
       <li>
         <Link to="/cv" alt="cv page">
-          <p className="link">curriculum vitae</p>
+          <p className="link">cv</p>
         </Link>
       </li>
       <div className="tomato" />

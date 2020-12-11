@@ -5,6 +5,7 @@ import './RightSidebar.css';
 function RightSidebar() {
  return (
 <nav> 
+  <div className="tomato" /> 
   <h1 className="title">portfolio</h1>
   <ul>
     <li>
@@ -27,7 +28,6 @@ function RightSidebar() {
       <p className="link">project H</p>
       </Link>
     </li>
-    <div className="tomato" /> 
   </ul>
 </nav>
  )
