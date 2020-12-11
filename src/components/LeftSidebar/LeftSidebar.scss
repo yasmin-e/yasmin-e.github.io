@@ -21,3 +21,33 @@ nav .upper {
  transition: 0.4s;
 }
 
+.link {
+ color: blue;
+ padding: 3%;
+}
+
+.link:hover,
+.link:focus {
+ letter-spacing: 2px;
+ text-decoration: none;
+ font-weight: 500;
+ transition-duration: 0.5s;
+}
+
+.link:link,
+.link:active,
+.link:visited {
+ color: blue;
+}
+
+.tomato {
+ background-color: tomato;
+ height: 5px;
+}
+
+@media screen and (max-width: 310px) {
+ .name, 
+ .link {
+  font-size: 12px;
+ }
+}

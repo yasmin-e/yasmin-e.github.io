@@ -1,15 +1,17 @@
 * {
  list-style: none;
- font-size: 15px;
+ font-size: 17px;
+ line-height: 25px;
+ text-decoration: none;
 }
 
-table {
+.table {
  width: 100%;
  height: 500px;
 }
 
-table, td, tr, th {
- border: solid 1px blue;
+.table {
+ padding: 5%;
 }
 
 .mc {
@@ -27,4 +29,5 @@ table, td, tr, th {
  padding: 5px;
  height: 100%;
  background-color:  rgb(255, 253, 251);
+ border: solid 1px blue;
 }

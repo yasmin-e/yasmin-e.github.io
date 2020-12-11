@@ -4,24 +4,30 @@ import './RightSidebar.css';
 
 function RightSidebar() {
  return (
-<nav>
-  <h1>Work</h1>
+<nav> 
+  <h1 className="title">portfolio</h1>
   <ul>
     <li>
-      <Link to="/">Link 1</Link>
+      <Link to="/">
+        <p className="link">project X</p>
+      </Link>
     </li>
     <li>
-      <Link to="/">Link 2</Link>
+      <Link to="/">
+      <p className="link">project Y</p>
+      </Link>
     </li>
     <li>
-      <Link to="/">Link 3</Link>
+      <Link to="/">
+      <p className="link">project Z</p>
+      </Link>
     </li>
     <li>
-      <Link to="/">Link 4</Link>
+      <Link to="/">
+      <p className="link">project H</p>
+      </Link>
     </li>
-    <li>
-      <Link to="/">Link 5</Link>
-    </li>
+    <div className="tomato" /> 
   </ul>
 </nav>
  )

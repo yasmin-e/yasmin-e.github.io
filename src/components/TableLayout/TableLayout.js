@@ -7,9 +7,9 @@ import Footer from '../Footer/Footer';
 function TableLayout({ Component }) {
  return (
    <div>
-     <table>
-      <tbody className="wrapper">
-        <tr>
+     <table className="table">
+      <tbody className="tbody">
+        <tr className="tr">
           <td className="ls"><LeftSidebar /></td>
           <td className="mc"><Component /></td>
           <td className="rs"><RightSidebar /></td>

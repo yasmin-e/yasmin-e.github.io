@@ -28,16 +28,14 @@ function Introduction() {
      >
       Yasmine
       {yas && <img src={yasmineImg} alt="yasmine" className="yasmine" />}
-     </span> and 
-    I was born in <span 
+     </span>, born in <span 
     className="underline" 
     onMouseEnter={onTunisChange} 
     onMouseLeave={onTunisChange}>
      Tunis
     {tunis && <img src={tunisImg} alt="Tunis on a map" className="tunis" />}
     </span> in 1995.
-    I am a <span className="bold">creative</span> <span className="spacing">junior</span> Fullstack Web Developer.
-    Currently in Budapest.
+    I am a creative junior Fullstack Web Developer currently living in Budapest.
    </div>
    <div>
     Given my scientific background and my passion for visual and fine arts, 

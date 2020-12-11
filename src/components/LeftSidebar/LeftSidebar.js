@@ -14,25 +14,26 @@ function LeftSidebar() {
       className="logo"
       onClick={() => { history.push('/'); }}
       />
-    <h1>yasmine abdelkefi</h1>
+    <h1 className="name">yasmine abdelkefi</h1>
   </div>
   <div className="lower">
-    <ul>
+    <ul className="list">
       <li>
-        <Link to="/">Link 1</Link>
+        <a href="https://github.com/yasmin-e" alt="github account">
+          <p className="link">github</p>
+        </a>
       </li>
       <li>
-        <Link to="/">Link 2</Link>
+        <Link to="/contact" alt="contact page">
+          <p className="link">contact me</p>
+        </Link>
       </li>
       <li>
-        <Link to="/">Link 3</Link>
+        <Link to="/cv" alt="cv page">
+          <p className="link">curriculum vitae</p>
+        </Link>
       </li>
-      <li>
-        <Link to="/">Link 4</Link>
-      </li>
-      <li>
-        <Link to="/">Link 5</Link>
-      </li>
+      <div className="tomato" />
     </ul>
   </div>
 </nav>

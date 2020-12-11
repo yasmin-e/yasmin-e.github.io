@@ -1,13 +1,15 @@
-footer {
- height: 155px;
+.blu {
+ height: 162px;
  background-color: blue;
  display: flex;
 }
 
 .footer-txt {
- background-color: blue;
- color: white;
- font-weight: 900;
- margin-top: 140px;
+ color: blue;
+ font-weight: 700;
  margin-left: 10px;
+}
+
+footer {
+ border-bottom: 1px dotted blue;
 }
