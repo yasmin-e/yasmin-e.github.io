@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './LeftSidebar.scss'
 import logo from '../../assets/logo.png';
@@ -14,7 +14,7 @@ function LeftSidebar() {
       className="logo"
       onClick={() => { history.push('/'); }}
       />
-    <h1><span>yasmine abdelkefi</span></h1>
+    <h1>yasmine abdelkefi</h1>
   </div>
   <div className="lower">
     <ul>

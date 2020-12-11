@@ -1,0 +1,73 @@
+.bold {
+ font-weight: 700;
+}
+
+.underline {
+ text-decoration: underline;
+}
+
+.spacing {
+ letter-spacing: 1px;
+}
+
+.underline:hover,
+.bold:hover,
+.spacing:hover {
+ text-decoration: none;
+ font-weight: normal;
+}
+
+.wrapper div {
+ font-size: 20px;
+ padding: 2%;
+ line-height: 30px;
+}
+
+.wrapper span {
+ font-size: 20px;
+}
+
+.wrapper span:hover {
+ color: blue;
+ cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+ .wrapper div {
+  font-size: 17px;
+  line-height: 25px;
+  padding: 2%;
+ }
+ .wrapper span {
+  font-size: 17px;
+ }
+}
+
+@media screen and (max-width: 310px) {
+ .wrapper div {
+  font-size: 13px;
+  line-height: 25px;
+  padding: 2%;
+ }
+ .wrapper span {
+  font-size: 13px;
+ }
+}
+
+.tunis {
+ position: absolute;
+ top: 30%;
+ right: 1.5%;
+ width: 17%;
+ border: 1px solid white;
+ outline: 1px solid blue;
+}
+
+.yasmine {
+ position: absolute;
+ top: 15%;
+ left: 5%;
+ width: 10%;
+ border: 1px solid white;
+ outline: 1px solid blue;
+}

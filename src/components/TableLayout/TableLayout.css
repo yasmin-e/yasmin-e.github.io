@@ -1,5 +1,6 @@
 * {
  list-style: none;
+ font-size: 15px;
 }
 
 table {
@@ -7,7 +8,7 @@ table {
  height: 500px;
 }
 
-table, td {
+table, td, tr, th {
  border: solid 1px blue;
 }
 
@@ -24,4 +25,6 @@ table, td {
 .ls,
 .rs {
  padding: 5px;
+ height: 100%;
+ background-color:  rgb(255, 253, 251);
 }

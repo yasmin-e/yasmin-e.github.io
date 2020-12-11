@@ -1,13 +1,10 @@
 import React from 'react';
 import TableLayout from '../../components/TableLayout/TableLayout';
-import Footer from '../../components/Footer/Footer';
+import Introduction from '../../components/Introduction/Introduction';
 
 function HomePage() {
  return (
-  <div>
-   <TableLayout />
-   <Footer />
-  </div>
+   <TableLayout Component={Introduction}/>
  )
 }
 
