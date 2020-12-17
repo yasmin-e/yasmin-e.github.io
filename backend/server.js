@@ -38,6 +38,6 @@ router.post('/contact', (req, res) => {
  contactEmail.sendMail(mail, (error) => {
   if (error) {
    res.json({ status: 'error' });
-  } res.json({ status: 'message sent' });
+  } res.json({ status: 'ok' });
  });
 });

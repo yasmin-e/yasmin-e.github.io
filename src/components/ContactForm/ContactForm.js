@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
-import logo from '../../assets/logo.png'
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -17,30 +16,34 @@ function ContactForm() {
     else if (id === 'message') { setMessage(value); }
   };
 
-  function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Sending');
-    fetch({
+    setStatus('Sending...');
+    let details = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    let res = await fetch("http://localhost:5000/contact", {
       method: "POST",
-      url: "http://localhost:5000/contact",
-      data: {
-        name: name,
-        email: email,
-        message: message
-      }
-    }).then((res) => {
-      if (res.OK) { 
-        setStatus('Sent');
-        setTimeout(() => {
-          setName(''); 
-          setEmail(''); 
-          setMessage(''); 
-          setStatus('Send');
-        }, 50000);
-     } else {
-      setStatus('Failed. Try again.');
-     }
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
     });
+    let parsedRes = await res.json();
+    if (parsedRes.status === 'ok') {
+      setStatus('Sent');
+      setTimeout(() => {
+        setName(''); 
+        setEmail(''); 
+        setMessage(''); 
+        setStatus('Send');
+      }, 1000);
+      alert('Thank you for your message, I just got it in my inbox!');
+    } else if (parsedRes.status === 'error') {
+      alert('Oops! Something went wrong. Try again later.');
+    } 
   };
 
  return (
@@ -96,5 +99,4 @@ function ContactForm() {
   </div>
  );
 }
-
 export default ContactForm;
