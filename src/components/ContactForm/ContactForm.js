@@ -7,15 +7,13 @@ function ContactForm() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('Send');
   let buttonText = status;
-
-  function handleChange(e) {
+  const handleChange = (e) => {
     let id = e.target.id;
     let value = e.target.value;
     if (id === 'name') { setName(value); }
     else if (id === 'email') { setEmail(value); }
     else if (id === 'message') { setMessage(value); }
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Sending...');
@@ -45,7 +43,6 @@ function ContactForm() {
       alert('Oops! Something went wrong. Try again later.');
     } 
   };
-
  return (
   <div>
     <h1 className="contact-title">stay in touch</h1>
