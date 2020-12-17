@@ -7,6 +7,7 @@ import {
 import './App.css';
 import HomePage from './pages/HomePage/HomePage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import CVPage from './pages/CVPage/CVPage';
 
 function App() {
   return (
@@ -21,10 +22,13 @@ function App() {
             exact path="/contact" 
             component={ContactPage} 
           />
+          <Route 
+            exact path="/cv" 
+            component={CVPage} 
+          />
           </Switch>
       </Router>
     </div>
   );
-}
-
+};
 export default App;

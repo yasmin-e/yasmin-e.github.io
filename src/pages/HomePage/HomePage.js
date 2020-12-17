@@ -5,7 +5,6 @@ import Introduction from '../../components/Introduction/Introduction';
 function HomePage() {
  return (
    <TableLayout Component={Introduction}/>
- )
-}
-
+ );
+};
 export default HomePage;
